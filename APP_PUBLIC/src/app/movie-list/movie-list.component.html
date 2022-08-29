@@ -1,0 +1,10 @@
+<h1 class="listheader"> Movie List </h1>
+<div class="error"></div>
+<div *ngFor="let movielist of movies;" class="col-xs-4 col-md-3">
+  <a routerLink="/movie/{{ movielist._id }}">
+    <div>
+      <div [ngStyle]="{ 'background-image': 'url( ' + movielist.image + ')'}" class="thumb listing-poster"></div>
+    </div>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+    <h4 class="thumb__title">{{ movielist.name }}</h4>
+  </a>
+</div>

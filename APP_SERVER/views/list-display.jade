@@ -1,0 +1,22 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  app-movie-list 
+  //- .col-xs-4.col-md-12.center
+  //-       a(href="/new")
+  //-         p.createMovie Create New Movie
+    //- .list 
+    //-   .movieImg(style='background-image:url(#{movielist.image});')
+    //-   .movieDetails
+    //-     a(href="/movie/#{movielist._id}") 
+    //-       h3.movielist #{movielist.name} 
+        //- p.movielist Genre: #{movielist.genre}  
+        //- p.movielist Cast: #{movielist.cast}
+        //- p.movielist Director: #{movielist.director}
+        //- p.movielist Duration: #{movielist.duration} min
+        //- p.movielist releaseDate: #{movielist.releaseDate}
+        //-   p.rating
+        //-     +outputRating(movielist.rating)
+
+      

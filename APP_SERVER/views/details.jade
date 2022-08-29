@@ -1,0 +1,31 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  h1.listheader= title
+  .list
+        .movieImg(style='background-image:url(#{movies.image});')
+        .movieDetails
+            p.rating
+                +outputRating(movies.rating) 
+            h3.movielist #{movies.name} 
+            p.movielist Genre: #{movies.genre}  
+            p.movielist Cast: #{movies.cast}
+            p.movielist Director: #{movies.director}
+            p.movielist Duration: #{movies.duration} min
+            p.movielist releaseDate: #{movies.releaseDate}
+            p.movielist Description: 
+            p.description #{movies.description}
+
+  a(href="/edit/#{movies._id}")
+    p.EditMovieButton Edit
+
+  a(href="/delete/#{movies._id}")
+    p.deleteMovieButton Delete
+
+  
+            
+            
+
+
+  

@@ -1,0 +1,13 @@
+.navbar-brand{
+  font-family: 'Poppins', sans-serif;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  margin-right: 8px;
+}
+
+.nav {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+

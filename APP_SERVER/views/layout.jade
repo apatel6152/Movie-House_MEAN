@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/build/styles.css')
+  body
+    block content
+    block scripts
+      script(src='/build/main.js')
+      script(src='/build/polyfills.js')
+      script(src='/build/runtime.js')
+      script(src='/build/vendor.js')
+
+//- doctype html
+//- html
+//-   head
+//-     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+//-     link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+//-     link(rel='stylesheet', href='/stylesheets/style.css')
+//-   body
+//-     .navbar.navbar-default.navbar-fixed-top
+//-       .container
+//-         .navbar-header
+//-           a.navbar-brand(href='/') Marvel Movie House
+//-           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+//-             span.icon-bar
+//-             span.icon-bar
+//-             span.icon-bar
+//-         #navbar-main.navbar-collapse.collapse
+//-           ul.nav.navbar-nav
+//-             li
+//-               a(href='/about/') About
+
+//-             li
+//-               a(href='/list/') Movie List
+            
+//-             li
+//-               a(href='/new/') Create New Movie
+            
+//-     .container
+//-       block content
+
+//-   .footer
+//-     .container.text-center
+//-       small &copy; Marvel Movie House
+
+//-       //- footer 
+//-       //-   .row 
+//-       //-     .col.xs-12
+//-       //-       small &copy; Marvel Movie House
+      
+//-     //- footer#sticky-footer.flex-shrink-0.py-4.bg-dark.text-white-50
+//-     //-     .container.text-center
+//-     //-       .col.xs-12
+//-     //-         small &copy; Marvel Movie House
+
+//-     script(src='/javascripts/jquery-1.11.1.min.js')
+//-     script(src='/bootstrap/js/bootstrap.min.js')

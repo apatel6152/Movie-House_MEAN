@@ -1,0 +1,36 @@
+<h1 class="listheader">Movie Details</h1>
+<div class="list">
+
+
+  <div class="movieImg" [ngStyle]="{ 'background-image': 'url( ' + movie.image + ')'}"></div>
+
+  <div class="movieDetails">
+    <div class="hover-btn">
+      <a routerLink="/delete/{{ movie._id }}">
+        <button type="button" class="glyphicon glyphicon-trash close"></button>
+      </a>
+
+      <a routerLink="/edit/{{ movie._id }}">
+        <button type="button" class="glyphicon glyphicon-pencil close edit"></button>
+      </a>
+    </div>
+    <h3 class="movielist">{{ movie.name }} </h3>
+    <p class="movielist">Genre: {{ movie.genre }} </p>
+    <p class="movielist">Cast: {{ movie.cast }}</p>
+    <p class="movielist">Director:{{ movie.director }}</p>
+    <p class="movielist">Duration: {{ movie.duration }} Min</p>
+    <p class="movielist">releaseDate: {{ movie.releaseDate | date }} </p>
+    <p class="movielist">Description: </p>
+    <p class="description">{{ movie.description }} </p>
+    <p class="rating">
+      <span *ngFor="let item of [].constructor(movie.rating)" class="glyphicon glyphicon-star"></span>
+      <span *ngFor="let item of [].constructor(5 - movie.rating)" class="glyphicon glyphicon-star-empty"></span>
+    </p>
+  </div>
+</div>
+<!-- <a routerLink="/edit/{{ movie._id }}">
+    <p class="EditMovieButton btn btn-info">Edit</p>
+</a>
+<a routerLink="/delete/{{ movie._id }}">
+    <p class="deleteMovieButton btn btn-danger">Delete</p>
+</a> -->
